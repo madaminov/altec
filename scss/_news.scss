@@ -1,0 +1,106 @@
+.row-news {
+  gap: 8px 0px;
+  @include media-breakpoint-up(md) {
+    gap: 24px 0px;
+  }
+  .item {
+    height: 100%;
+    .wrap-img {
+      margin-bottom: 12px;
+      clip-path: polygon(27% 0, 100% 0, 100% 50%, 68% 100%, 0 100%, 0 43%);
+      @include media-breakpoint-up(md) {
+        margin-bottom: 24px;
+      }
+    }
+    .wrap-text {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      align-self: stretch;
+      @include media-breakpoint-up(md) {
+        gap: 10px;
+      }
+      @include media-breakpoint-up(lg) {
+        gap: 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        gap: 24px;
+      }
+      .bg {
+        width: 12px;
+        height: 6px;
+        background-image: url(../images/line-news.svg),
+          url(../images/line-news.svg);
+        background-position: left center, right center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
+        flex: 0 0 auto;
+        @include media-breakpoint-up(md) {
+          width: 20px;
+          height: 10px;
+        }
+        @include media-breakpoint-up(lg) {
+          width: 28px;
+          height: 14px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 32px;
+          height: 16px;
+        }
+      }
+    }
+    .item_name {
+      color: $black-color;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 6px;
+      @include media-breakpoint-up(md) {
+        @include fs-md(20px);
+        margin-bottom: 12px;
+      }
+      @include media-breakpoint-up(lg) {
+        @include fs-lg(20px);
+        margin-bottom: 12px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+    }
+    .description {
+      color: $black-color;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 20.8px */
+      margin-bottom: 12px;
+      display: none;
+      @include media-breakpoint-up(lg) {
+        @include fs-lg(16px);
+        display: block;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+    }
+    .date {
+      color: $gray-4;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      @include media-breakpoint-up(md) {
+        font-size: 10px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 14px;
+      }
+    }
+  }
+}

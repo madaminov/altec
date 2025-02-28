@@ -1,0 +1,18 @@
+//sass --watch scss/style.scss css/style.css
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import '_animate';
+@import '_variables';
+@import '_reset';
+@import '_form';
+@import '_form_control';
+@import '_swiper';
+@import '_styles';
+@import '_button';
+@import '_header';
+@import '_mobile_menu';
+@import '_footer';
+@import '_main';
+@import '_slider_main';
+@import '_catalog';
+@import '_news';

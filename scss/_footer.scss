@@ -1,0 +1,199 @@
+footer {
+  position: relative;
+  transition: all 0.3s ease;
+  &::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black-color;
+    @include media-breakpoint-up(md) {
+      width: 20%;
+      height: 60px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 20%;
+      height: 60px;
+    }
+  }
+
+  &::after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: $gray-2;
+    @include media-breakpoint-up(sm) {
+      height: 60px;
+    }
+    @include media-breakpoint-up(md) {
+      top: 0px;
+      right: 0%;
+      width: 50%;
+      height: 60px;
+    }
+    @include media-breakpoint-up(xl) {
+      left: 10%;
+      top: 0;
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  .container-fluid {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(xl) {
+      flex-wrap: nowrap;
+    }
+  }
+  .nav {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $black-color;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px 0px;
+    @include media-breakpoint-up(md) {
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      width: 70%;
+      justify-content: start;
+      padding: 0px 0px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 45%;
+    }
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px 42px;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      justify-content: start;
+    }
+    li {
+      font-size: 14px;
+      font-style: normal;
+      display: flex;
+      text-align: center;
+      width: calc(40% - 20px);
+      justify-content: center;
+      @include media-breakpoint-up(sm) {
+        width: auto;
+        text-align: left;
+        justify-content: start;
+      }
+      @include media-breakpoint-up(md) {
+        height: 60px;
+      }
+      align-items: center;
+      a {
+        color: $white;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+  }
+  .wrap-soc {
+    display: inline-flex;
+    align-items: center;
+    gap: 42px;
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    width: 316px;
+    justify-content: center;
+    background-color: $gray-2;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: 30%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 316px;
+      clip-path: polygon(0 0, 270px 0, 100% 100%, 0% 100%);
+    }
+    .btn-soc {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .link {
+    list-style: none;
+    margin: 0;
+
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px 32px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    @include media-breakpoint-up(sm) {
+      width: 60%;
+    }
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: auto;
+      height: 100%;
+      justify-content: end;
+      margin-left: auto;
+    }
+    li {
+      font-size: 14px;
+      font-style: normal;
+      display: flex;
+      a {
+        color: $gray;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.main-page {
+  footer {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}

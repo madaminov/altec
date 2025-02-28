@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Altec</title>
+	<meta name="description" content="Altec" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/lax.min.js"></script>
+
+
+
+</head>
+
+<body class="main-page scrollbar-hidden">
+	<header>
+		<div class="container-fluid">
+			<div class="header-row">
+				<div class="logo">
+					<a href="/">
+						<img src="images/logo.png" />
+					</a>
+				</div>
+				<div class="slogan">
+					15 лет работаем для вас!
+				</div>
+				<div class="wrap-search">
+					<button class="btn-search"></button>
+				</div>
+				<nav class="nav">
+					<ul class="menu">
+						<li><a href="">Каталог</a></li>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Объекты</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</nav>
+				<a class="email" href="mailTo:info@al-tec.ru">info@al-tec.ru</a>
+				<a class="phone" href="tel:+7 (812) 441-36-59">+7 (812) 441-36-59</a>
+			</div>
+		</div>
+	</header>
+	<section class="section section-for-sliders">
+		<div class="container-sliders">
+			<div class="page active page-1 animated">
+				<div class="container-fluid">
+					<div class="wrap-silder">
+						<div class="main-slider">
+							<div class="swiper mainSwiper ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image: url(images/slider-1.jpg);">
+									</div>
+									<div class="swiper-slide" style="background-image: url(images/slider-2.jpg);">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-pagination-main"></div>
+
+					</div>
+					<div class="row row-1 align-items-end">
+						<div class="col-12 col-md-6">
+							<h2 class="title">Производство и обслуживание</h2>
+							<h2 class="title">автоматических моек с гарантией</h2>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 ">
+							<p>Осуществляем полный цикл работ<br /> от проектирования до обслуживания</p>
+						</div>
+						<div class="col-12 col-md-6 col-lg-2">
+							<div class="wrap-button">
+								<button class="prev btn-scroll-prev" onclick="slidePrev();">
+									<svg>
+										<use href="images/arrow-right-2.svg#arrow" />
+									</svg>
+								</button>
+								<button class="next btn-scroll-next" onclick="slideNext();">
+									<svg>
+										<use href="images/arrow-right-2.svg#arrow" />
+									</svg>
+								</button>
+							</div>
+
+						</div>
+					</div>
+					<div class="row row-2 align-items-end">
+						<div class="col-12 col-md-3">
+							<p class="p1">Надежные машины и бесперебойное техническое обслуживание</p>
+							<p class="p2"><a class="to-link">Посмотреть каталог</a></p>
+						</div>
+						<div class="col-12 col-md-3">
+							<p class="p3">Гарантия высокого качества сервиса и долгосрочного сотрудничества</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<h2 class="title">Автомойки</h2>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="page page-2 animated" id="page-2">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-lg-6">
+							<div class="wrap-text">
+								<h2 class="h2">О компании</h2>
+								<h3 class="h3">Производство и обслуживание автоматических моек с гарантией</h3>
+								<p class="p1">ООО «Ал-Тек» является производителем и поставщиком автоматических моек для
+									легкового,
+									грузового, пассажирского и железнодорожного транспорта, систем очистки воды
+									и дождевания.</p>
+								<p class="p1"><button class="btn-romb">Читать о компании</button></p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<img src="images/image-about.png" class="img-fluid image" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+	<footer>
+		<div class="container-fluid">
+			<div class="footer-row">
+				<nav class="nav">
+					<ul class="menu">
+						<li><a href="">О компании</a></li>
+						<li><a href="">Производство</a></li>
+						<li><a href="">Новости</a></li>
+						<li><a href="">Вопрос-ответ</a></li>
+					</ul>
+				</nav>
+				<div class="wrap-soc">
+					<a href="whatsapp" class="btn-soc whatsapp"></a>
+					<a href="telegram" class="btn-soc telegram"></a>
+				</div>
+				<ul class="link">
+					<li><a href="">Задать вопрос</a></li>
+					<li><a href="">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper/swiper-bundle.min.js"></script>
+
+
+
+	<script>
+		var swiper = new Swiper(".mainSwiper", {
+			pagination: {
+				el: ".swiper-pagination-main",
+			},
+		});
+	</script>
+	<script>
+		const carouselItems = document.querySelectorAll(".container-sliders .page");
+		const prevButton = document.querySelector(".prev");
+		const nextButton = document.querySelector(".next");
+		let currentIndex = 0;
+		let clickPrev = false;
+		let clickNext = false;
+
+
+		function goToSlide(index) {
+			if (index < 0) {
+				index = carouselItems.length - 1;
+			} else if (index >= carouselItems.length) {
+				index = 0;
+			}
+			console.log(index)
+			if (index == 0) {
+				prevButton.disabled = true;
+			} else {
+				prevButton.disabled = false;
+			}
+			if (index == carouselItems.length - 1) {
+				nextButton.disabled = true;
+			} else {
+				nextButton.disabled = false;
+			}
+
+			carouselItems.forEach((box) => {
+				if (box.classList.contains('active')) {
+					box.classList.add('slideOutLeft');
+					setTimeout(() => {
+						box.classList.remove('active');
+					}, 900);
+
+				}
+			})
+
+			setTimeout(() => {
+				carouselItems[index].classList.add('active');
+			}, 900);
+			setTimeout(() => {
+				carouselItems[index].classList.add('slideInRight');
+			}, 1000);
+
+			setTimeout(() => {
+				carouselItems.forEach((box) => {
+					box.classList.remove('slideOutLeft');
+				})
+				carouselItems[index].classList.remove('slideInRight');
+			}, 1400);
+			currentIndex = index;
+		}
+
+		function slideNext() {
+			clickNext = true;
+			goToSlide(currentIndex + 1);
+
+		}
+
+		function slidePrev() {
+			clickPrev = true;
+			goToSlide(currentIndex - 1);
+		}
+
+		// Automatic sliding
+		//setInterval(slideNext, 4000);
+
+		// Manual navigation event listeners
+		//prevButton.addEventListener("click", slidePrev);
+		//nextButton.addEventListener("click", slideNext);
+	</script>
+
+
+</body>
+
+</html>

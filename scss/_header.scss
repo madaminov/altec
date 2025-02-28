@@ -1,0 +1,123 @@
+header {
+  transition: all 0.3s ease;
+  .header-row {
+    display: flex;
+    padding-top: 12px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    @include media-breakpoint-up(xl) {
+      padding-top: 25px;
+      align-items: flex-start;
+    }
+  }
+  .logo {
+    display: flex;
+    width: 74px;
+    height: 45px;
+    padding: 1px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    @include media-breakpoint-up(xl) {
+      width: 138px;
+      height: 103px;
+      margin-right: 60px;
+    }
+  }
+  .slogan {
+    color: $white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 177px;
+    height: 26px;
+    padding: 5px 14px 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: $blue;
+    @include border-radius(25px);
+    @include media-breakpoint-up(xl) {
+      margin-top: 4px;
+    }
+  }
+  .wrap-search {
+    display: flex;
+    margin-left: auto;
+    @include media-breakpoint-up(xl) {
+      margin-top: 15px;
+    }
+  }
+  .nav {
+    margin-left: 32px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 15px;
+    }
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px 32px;
+    li {
+      font-size: 14px;
+      font-style: normal;
+      display: flex;
+      a {
+        color: $black-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+  }
+  .email {
+    color: $black-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 45px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 15px;
+    }
+  }
+  .phone {
+    color: $black-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 24px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 15px;
+    }
+  }
+  .btn-menu-mobile {
+    margin-left: 32px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 15px;
+    }
+  }
+}
+.main-page {
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}

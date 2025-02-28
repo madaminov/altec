@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+$font-stack-inter: 'Inter', sans-serif;
+
+$font-size: 16px;
+$line-height: 130%;
+$font-weight: 400;
+
+$body-color: #eaeaea !default;
+$black-color: #222222 !default;
+$primary-default: #d3bff9 !default;
+$white: #ffffff !default;
+$gray: #606060 !default;
+$gray-2: #e4e4e4 !default;
+$gray-3: #e0e0e0 !default;
+$gray-4: #c0c0c0 !default;
+$gray-5: #efefef !default;
+$gray-6: #d9d9d9 !default;
+
+$blue: #008bd2 !default;
+
+@mixin transition($transition) {
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin fs-md($font-size) {
+  font-size: calc($font-size * 0.6);
+}
+@mixin fs-lg($font-size) {
+  font-size: calc($font-size * 0.8);
+}

@@ -1,0 +1,142 @@
+.btn-search {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../images/icon-search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
+.btn-soc {
+  display: flex;
+  width: 40px;
+  height: 24px;
+  padding: 5px 14px 6px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  @include border-radius(25px);
+  border: 0;
+  background-color: $black-color;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  @include transition(0.3s);
+  &:hover {
+    background-color: $blue;
+  }
+  &.whatsapp {
+    background-image: url(../images/whatsapp.svg);
+  }
+  &.telegram {
+    background-image: url(../images/telegram.svg);
+  }
+  &.whatsapp-black {
+    background-image: url(../images/whatsapp-black.svg);
+  }
+  &.telegram-black {
+    background-image: url(../images/telegram-black.svg);
+  }
+}
+.btn-rectangle {
+  color: $black-color;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 144px;
+  height: 36px;
+  flex-shrink: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  transition: all 0.3s ease;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22144%22%20height%3D%2236%22%20viewBox%3D%220%200%20144%2036%22%20fill%3D%22none%22%3E%0A%3Cpath%20d%3D%22M0.853561%2035.4L13.3757%200.6H143.146L130.624%2035.4H0.853561Z%22%20stroke%3D%22%23222222%22%20stroke-width%3D%221.2%22%2F%3E%0A%3C%2Fsvg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+    width: 220px;
+    height: 50px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+    width: 240px;
+    height: 60px;
+  }
+  &:hover {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22144%22%20height%3D%2236%22%20viewBox%3D%220%200%20144%2036%22%20fill%3D%22none%22%3E%0A%3Cpath%20d%3D%22M0.853561%2035.4L13.3757%200.6H143.146L130.624%2035.4H0.853561Z%22%20stroke%3D%22%23606060%22%20stroke-width%3D%221.2%22%2F%3E%0A%3C%2Fsvg%3E');
+    color: $gray;
+    transition: all 0.3s ease;
+  }
+}
+.btn-scroll-prev,
+.btn-scroll-next {
+  display: flex;
+  width: 56px;
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: $gray-3;
+  border: none;
+  transition: all 0.3s ease;
+  svg {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    stroke: $black-color;
+    width: 11px;
+    height: 16px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: $blue;
+    svg {
+      stroke: $white;
+    }
+  }
+  &:disabled,
+  &:disabled:hover {
+    background: $gray-3;
+    svg {
+      stroke: $gray-4;
+    }
+  }
+}
+.btn-scroll-prev {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.btn-menu-mobile {
+  background-color: transparent;
+  background-image: url(../images/icon-menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+.btn-close-mobile-menu {
+  background-color: transparent;
+  background-image: url(../images/icon-menu-close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+}
