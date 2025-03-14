@@ -1,3 +1,8 @@
+let window_width = window.outerWidth;
+window.addEventListener('resize', function () {
+  window_width = window.outerWidth;
+  console.log(window_width);
+});
 let mobile_menu = document.querySelector('.mobile_menu');
 document
   .querySelector('.btn-menu-mobile')
@@ -25,4 +30,10 @@ formControl.forEach((box) => {
       form_group.classList.remove('form-group-label-top');
     }
   });
+});
+
+$(function () {  
+  if (window_width > 768) {
+    new WOW().init();
+  }
 });
