@@ -3,7 +3,7 @@ footer {
   transition: all 0.3s ease;
   &::before {
     content: '';
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     left: 0;
     top: 0;
@@ -15,14 +15,14 @@ footer {
       height: 60px;
     }
     @include media-breakpoint-up(lg) {
-      width: 20%;
+      width: 30%;
       height: 60px;
     }
   }
 
   &::after {
     content: '';
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     right: 0;
     bottom: 0px;
@@ -31,24 +31,27 @@ footer {
     background-color: $gray-2;
     @include media-breakpoint-up(sm) {
       height: 60px;
+      background-color: $gray-2;
     }
     @include media-breakpoint-up(md) {
       top: 0px;
       right: 0%;
       width: 50%;
       height: 60px;
+      z-index: 1;
     }
     @include media-breakpoint-up(xl) {
       left: 10%;
       top: 0;
       width: 50%;
       height: 100%;
+      clip-path: none;
     }
   }
 
   .container-fluid {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
   .footer-row {
     display: flex;
@@ -74,13 +77,16 @@ footer {
     width: 100%;
     padding: 20px 0px;
     @include media-breakpoint-up(md) {
-      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      /*clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);*/
       width: 70%;
       justify-content: start;
       padding: 0px 0px;
     }
     @include media-breakpoint-up(xl) {
-      width: 45%;
+      width: 40%;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 40%;
     }
   }
   .menu {
@@ -88,7 +94,7 @@ footer {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px 42px;
+    gap: 10px 20px;
     height: 100%;
     align-items: center;
     flex-wrap: wrap;
@@ -96,9 +102,13 @@ footer {
     @include media-breakpoint-up(md) {
       justify-content: start;
     }
+    @include media-breakpoint-up(xl) {
+      gap: 20px 30px;
+    }
+    @media (min-width: 1280px) {
+      gap: 20px 42px;
+    }
     li {
-      font-size: 14px;
-      font-style: normal;
       display: flex;
       text-align: center;
       width: calc(40% - 20px);
@@ -114,11 +124,17 @@ footer {
       align-items: center;
       a {
         color: $white;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         text-decoration: none;
+        @include media-breakpoint-up(sm) {
+          font-size: 12px;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -129,10 +145,44 @@ footer {
     position: relative;
     z-index: 1;
     height: 60px;
-    width: 316px;
+    width: 315px;
     justify-content: center;
     background-color: $gray-2;
     width: 100%;
+    &::before {
+      content: '';
+      width: 60px;
+      height: 100%;
+      clip-path: polygon(0 0, 0% 100%, 100% 100%);
+      background-color: $black-color;
+      position: absolute;
+      left: -1px;
+      top: 0;
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+    &::after {
+      content: '';
+      width: 60px;
+      height: 100%;
+      background-color: $body-color;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+      @include media-breakpoint-up(xl) {
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        display: block;
+      }
+    }
     @include media-breakpoint-up(sm) {
       width: 30%;
     }
@@ -140,9 +190,10 @@ footer {
       width: 30%;
     }
     @include media-breakpoint-up(xl) {
-      width: 316px;
-      clip-path: polygon(0 0, 270px 0, 100% 100%, 0% 100%);
+      width: 315px;
+      /*clip-path: polygon(0 0, 270px 0, 100% 100%, 0% 100%);*/
     }
+
     .btn-soc {
       position: relative;
       z-index: 2;
@@ -151,7 +202,6 @@ footer {
   .link {
     list-style: none;
     margin: 0;
-
     padding: 0;
     display: flex;
     align-items: center;
@@ -175,16 +225,20 @@ footer {
       margin-left: auto;
     }
     li {
-      font-size: 14px;
-      font-style: normal;
       display: flex;
       a {
         color: $gray;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-decoration: none;
+        @include media-breakpoint-up(sm) {
+          font-size: 12px;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
       }
     }
   }

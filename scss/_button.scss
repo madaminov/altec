@@ -73,6 +73,35 @@
     width: 240px;
     height: 60px;
   }
+  @media (min-width: 1200px) and (min-height: 550px) {
+    //0.6
+    font-size: calc(14px);
+    width: calc(240px * 0.7);
+    height: calc(60px * 0.7);
+  }
+  @media (min-width: 1200px) and (min-height: 660px) {
+    //0.7
+    font-size: calc(14px);
+    width: calc(240px * 0.8);
+    height: calc(60px * 0.8);
+  }
+  @media (min-width: 1200px) and (min-height: 760px) {
+    //0.8
+    font-size: calc(16px * 0.8);
+    width: calc(240px * 0.8);
+    height: calc(60px * 0.8);
+  }
+  @media (min-width: 1200px) and (min-height: 860px) {
+    //0.9
+    font-size: calc(16px * 0.9);
+    width: calc(240px * 0.9);
+    height: calc(60px * 0.9);
+  }
+  @media (min-width: 1200px) and (min-height: 960px) {
+    font-size: 16px;
+    width: 240px;
+    height: 60px;
+  }
   &:hover {
     background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22144%22%20height%3D%2236%22%20viewBox%3D%220%200%20144%2036%22%20fill%3D%22none%22%3E%0A%3Cpath%20d%3D%22M0.853561%2035.4L13.3757%200.6H143.146L130.624%2035.4H0.853561Z%22%20stroke%3D%22%23606060%22%20stroke-width%3D%221.2%22%2F%3E%0A%3C%2Fsvg%3E');
     color: $gray;
@@ -82,8 +111,8 @@
 .btn-scroll-prev,
 .btn-scroll-next {
   display: flex;
-  width: 56px;
-  padding: 12px 10px;
+  width: 40px;
+  padding: 10px 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -92,6 +121,17 @@
   background: $gray-3;
   border: none;
   transition: all 0.3s ease;
+  @include media-breakpoint-up(md) {
+    width: 46px;
+    padding: 10px 10px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 50px;
+    padding: 10px 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 56px;
+  }
   svg {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;

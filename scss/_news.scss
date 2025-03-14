@@ -7,8 +7,41 @@
     height: 100%;
     .wrap-img {
       margin-bottom: 12px;
-      clip-path: polygon(27% 0, 100% 0, 100% 50%, 68% 100%, 0 100%, 0 43%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      clip-path: polygon(39% 0, 100% 0, 100% 50%, 55% 100%, 0 100%, 0 43%);
+      width: 100%;
+      min-height: 100px;
+      height: auto;
       @include media-breakpoint-up(md) {
+        margin-bottom: 15px;
+        min-height: 130px;
+      }
+      @include media-breakpoint-up(md) {
+        margin-bottom: 20px;
+        min-height: 160px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 24px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        height: calc(290px * 0.7);
+        margin-bottom: calc(24px * 0.7);
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        height: calc(290px * 0.8);
+        margin-bottom: calc(24px * 0.8);
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        height: calc(290px * 0.9);
+        margin-bottom: calc(24px * 0.9);
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        height: 298px;
         margin-bottom: 24px;
       }
     }
@@ -57,17 +90,35 @@
       font-weight: 500;
       line-height: normal;
       margin-bottom: 6px;
+      min-height: 25px;
       @include media-breakpoint-up(md) {
-        @include fs-md(20px);
-        margin-bottom: 12px;
+        @include fs-md(24px);
       }
       @include media-breakpoint-up(lg) {
-        @include fs-lg(20px);
-        margin-bottom: 12px;
+        @include fs-lg(24px);
       }
       @include media-breakpoint-up(xl) {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 12px;
+      }
+      @media (min-width: 1200px) and (min-height: 550px) {
+        //0.6
+        font-size: calc(24px * 0.6);
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        font-size: calc(24px * 0.7);
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        font-size: calc(24px * 0.8);
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        font-size: calc(24px * 0.9);
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        font-size: 24px;
       }
     }
     .description {
@@ -83,6 +134,22 @@
         display: block;
       }
       @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        font-size: calc(16px * 0.7);
+        display: none;
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        font-size: calc(16px * 0.8);
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        font-size: calc(16px * 0.9);
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
         font-size: 16px;
       }
     }

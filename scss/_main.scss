@@ -1,19 +1,31 @@
 .section-for-sliders {
-  min-height: 100dvh;
+  height: 100dvh;
   padding: 0px 0px 0px 0px;
   overflow: hidden;
+  @include media-breakpoint-up(md) {
+    height: calc(100dvh - 100px);
+  }
   @include media-breakpoint-up(lg) {
-    min-height: calc(100dvh - 70px);
+    height: calc(100dvh - 100px);
   }
   @include media-breakpoint-up(xl) {
-    min-height: 100dvh;
+    height: calc(100dvh - 60px);
   }
   .container-sliders {
     min-width: 100dvw;
-    min-height: 100dvh;
+    height: 100%;
     position: relative;
     overflow: hidden;
     transition: transform 0.8s ease-in-out;
+    @include media-breakpoint-up(md) {
+      height: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 100%;
+    }
     &::before {
       content: '';
       width: 60%;
@@ -30,6 +42,12 @@
         background-color: $body-color;
         display: block;
       }
+    }
+  }
+  .scrollSwiper-wrapper {
+    height: calc(100% - 45px);
+    @include media-breakpoint-up(md) {
+      height: 100%;
     }
   }
   .page {
@@ -60,7 +78,7 @@
   position: relative;
 }
 .scrollSwiper {
-  min-height: 100dvh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -137,6 +155,62 @@
 @import '_main_page_4';
 @import '_main_page_5';
 @import '_main_page_6';
+@import '_main_slider_text';
+
+.section-for-sliders {
+  .page-2,
+  .page-3,
+  .page-4,
+  .page-5,
+  .page-6 {
+    position: relative;
+    padding-top: 69px;
+    padding-bottom: 18px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 37px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 40px;
+      padding-top: calc(128px + 29px);
+    }
+    @media (min-width: 1200px) and (min-height: 660px) {
+      //0.7
+      padding-bottom: 20px;
+      padding-top: calc(128px + 10px);
+    }
+    @media (min-width: 1200px) and (min-height: 760px) {
+      //0.8
+      padding-bottom: 20px;
+      padding-top: calc(128px + 10px);
+    }
+    @media (min-width: 1200px) and (min-height: 860px) {
+      //0.9
+      padding-bottom: 30px;
+      padding-top: calc(128px + 10px);
+    }
+    @media (min-width: 1200px) and (min-height: 960px) {
+      padding-bottom: 40px;
+      padding-top: calc(128px + 29px);
+    }
+    &::before {
+      content: '';
+      width: 60%;
+      height: 100%;
+      background-color: $body-color;
+      display: none;
+      clip-path: polygon(0 0, 100% 0, 100% 94%);
+      margin-left: auto;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      z-index: 1;
+      @include media-breakpoint-up(lg) {
+        background-color: $gray-5;
+        display: block;
+      }
+    }
+  }
+}
 
 .swiper-slide-next {
   .title,

@@ -280,15 +280,45 @@
 .swiper-button-next {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 50%);
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: $gray-3;
+  border: none;
+  transition: all 0.3s ease;
+  @include media-breakpoint-up(md) {
+    width: 46px;
+    padding: 10px 10px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 50px;
+    padding: 10px 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 56px;
+  }
+  &:hover {
+    background: $blue;
+    svg {
+      stroke: $white;
+    }
+  }
+  &:disabled,
+  &:disabled:hover {
+    background: $gray-3;
+    svg {
+      stroke: $gray-4;
+    }
+  }
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -308,12 +338,16 @@
 }
 .swiper-button-prev svg,
 .swiper-button-next svg {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform-origin: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  stroke: $black-color;
+  width: 11px;
+  height: 16px;
+  transition: all 0.3s ease;
 }
 .swiper-rtl .swiper-button-prev svg,
+.swiper-button-prev svg,
 .swiper-rtl .swiper-button-next svg {
   transform: rotate(180deg);
 }
@@ -333,6 +367,7 @@
 /* Navigation font start */
 .swiper-button-prev:after,
 .swiper-button-next:after {
+  display: none;
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;

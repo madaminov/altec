@@ -8,6 +8,7 @@ header {
     align-items: center;
     @include media-breakpoint-up(xl) {
       padding-top: 25px;
+      padding-bottom: 17px;
       align-items: flex-start;
     }
   }
