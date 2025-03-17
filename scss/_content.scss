@@ -1,6 +1,6 @@
 .content {
-  h3,
-  .h3 {
+  h2,
+  .h2 {
     color: $black-color;
     font-size: 26px;
     font-style: normal;
@@ -17,12 +17,61 @@
       font-size: 32px;
     }
   }
+  h3,
+  .h3 {
+    color: $black-color;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 28px;
+    }
+  }
+  .h3-border {
+    color: $black-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 33.8px */
+    margin-bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid $black-color;
+    border-bottom: 3px solid $black-color;
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+      width: 85%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+      width: 80%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 26px;
+      width: 75%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
   h4,
   .h4 {
     color: $black-color;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     margin-bottom: 16px;
     @include media-breakpoint-up(md) {
@@ -50,6 +99,111 @@
     }
     @include media-breakpoint-up(xl) {
       font-size: 18px;
+    }
+  }
+  ul {
+    color: $black-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    margin-bottom: 16px;
+    width: 100%;
+    li {
+      margin-bottom: 16px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+      width: 80%;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      width: 80%;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      width: 75%;
+    }
+  }
+  ol {
+    color: $black-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    margin-bottom: 16px;
+    li {
+      margin-bottom: 16px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+      width: 80%;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      width: 80%;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      width: 75%;
+    }
+  }
+}
+.content .row-img-content {
+  gap: 16px 0px;
+  p {
+    color: $black-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    span {
+      display: block;
+      margin-top: 6px;
+    }
+  }
+}
+.content .div-table {
+  .title {
+    color: $black-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+    padding-bottom: 12px;
+    border-bottom: 2px solid $black-color;
+  }
+  .text {
+    margin-top: 24px;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 82%;
+    }
+  }
+}
+.contentSlider {
+  .swiper-bottom {
+    margin-top: 18px;
+    text-align: left;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: static;
+      margin: 0;
+    }
+    .swiper-pagination {
+      position: static;
+      width: auto;
+      color: $black-color;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 20.8px */
     }
   }
 }

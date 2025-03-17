@@ -94,6 +94,14 @@
       font-weight: 500;
       line-height: normal;
       margin-bottom: 0;
+      a {
+        color: $black-color;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $blue;
+        }
+      }
       @include media-breakpoint-up(md) {
         @include fs-md(32px);
       }
@@ -138,6 +146,15 @@
     }
     img {
       clip-path: polygon(39% 0, 100% 0, 100% 50%, 55% 100%, 0 100%, 0 43%);
+    }
+    &:hover {
+      a {
+        color: $black-color;
+        text-decoration: none;
+        &:hover {
+          color: $blue;
+        }
+      }
     }
   }
   .item {
@@ -208,6 +225,14 @@
       line-height: normal;
       min-height: 25px;
       margin-bottom: 0;
+      a {
+        color: $black-color;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $blue;
+        }
+      }
       @include media-breakpoint-up(md) {
         @include fs-md(24px);
       }
@@ -246,6 +271,9 @@
       @include media-breakpoint-up(xl) {
         font-size: 14px;
       }
+    }
+    &:hover a {
+      color: $blue;
     }
   }
   .item-video {
@@ -329,6 +357,14 @@
       font-weight: 500;
       line-height: normal;
       margin-bottom: 0px;
+      a {
+        color: $gray-5;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $blue;
+        }
+      }
       @include media-breakpoint-up(md) {
         @include fs-md(24px);
       }
@@ -367,6 +403,9 @@
       @include media-breakpoint-up(xl) {
         font-size: 14px;
       }
+    }
+    &:hover a {
+      color: $blue;
     }
   }
 }

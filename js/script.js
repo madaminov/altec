@@ -32,8 +32,16 @@ formControl.forEach((box) => {
   });
 });
 
-$(function () {  
+$(function () {
   if (window_width > 768) {
     new WOW().init();
   }
+  $(
+    ".content a[href$='.jpg'],.content a[href$='.jpeg'],.content a[href$='.png'], .content a[href$='.gif'], .content a[href$='.webP'], .content a[href$='.webp']"
+  )
+    .attr('data-fancybox', 'gallery')
+    .addClass('fancybox');
+  $(
+    ".content a[href$='.jpg'],.content a[href$='.jpeg'],.content a[href$='.png'], .content a[href$='.gif']"
+  ).fancybox();
 });

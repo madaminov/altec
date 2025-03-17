@@ -47,6 +47,13 @@ footer {
       height: 100%;
       clip-path: none;
     }
+    @include media-breakpoint-up(xxl) {
+      left: 10%;
+      top: 0;
+      width: 35%;
+      height: 100%;
+      clip-path: none;
+    }
   }
 
   .container-fluid {
