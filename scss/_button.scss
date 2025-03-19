@@ -155,6 +155,11 @@
     }
   }
 }
+.btn-scroll-prev {
+  svg {
+    transform: rotate(180deg);
+  }
+}
 .button-share {
   width: 24px;
   height: 24px;
@@ -190,11 +195,7 @@
     }
   }
 }
-.btn-scroll-prev {
-  svg {
-    transform: rotate(180deg);
-  }
-}
+
 .btn-menu-mobile {
   background-color: transparent;
   background-image: url(../images/icon-menu.svg);

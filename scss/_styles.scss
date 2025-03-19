@@ -115,13 +115,32 @@ section,
       right: 24px;
       clip-path: polygon(41% 0%, 100% 0, 100% 54%, 60% 100%, 0 100%, 0 53%);
       max-width: 642px;
-      max-height: 560px;
+      max-height: 340px;
       @include media-breakpoint-up(lg) {
         right: 40px;
       }
       @include media-breakpoint-up(xl) {
         right: 68px;
         top: 24px;
+      }
+      @media (min-width: 1200px) and (min-height: 550px) {
+        //0.7
+        max-height: calc(536px * 0.6);
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        max-height: calc(536px * 0.7);
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        max-height: calc(536px * 0.8);
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        max-height: calc(536px * 0.9);
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        max-height: 536px;
       }
     }
     img {
@@ -136,7 +155,26 @@ section,
       margin-left: auto;
       clip-path: polygon(41% 0%, 100% 0, 100% 54%, 60% 100%, 0 100%, 0 53%);
       max-width: 642px;
-      max-height: 560px;
+      max-height: 340px;
+      @media (min-width: 1200px) and (min-height: 550px) {
+        //0.7
+        max-height: calc(536px * 0.6);
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        max-height: calc(536px * 0.7);
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        max-height: calc(536px * 0.8);
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        max-height: calc(536px * 0.9);
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        max-height: 536px;
+      }
     }
   }
 }

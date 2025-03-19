@@ -250,7 +250,8 @@ footer {
     }
   }
 }
-.main-page {
+.main-page,
+.inner-page-for-slider {
   footer {
     display: none;
     @include media-breakpoint-up(md) {

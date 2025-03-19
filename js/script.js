@@ -41,7 +41,4 @@ $(function () {
   )
     .attr('data-fancybox', 'gallery')
     .addClass('fancybox');
-  $(
-    ".content a[href$='.jpg'],.content a[href$='.jpeg'],.content a[href$='.png'], .content a[href$='.gif']"
-  ).fancybox();
 });

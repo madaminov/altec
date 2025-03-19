@@ -168,3 +168,6 @@ body {
     }
   }
 }
+.img-rectangle {
+  clip-path: polygon(0 0, 60% 0, 100% 50%, 100% 100%, 40% 100%, 0% 50%);
+}
