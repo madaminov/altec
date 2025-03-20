@@ -115,7 +115,7 @@ section,
       right: 24px;
       clip-path: polygon(41% 0%, 100% 0, 100% 54%, 60% 100%, 0 100%, 0 53%);
       max-width: 642px;
-      max-height: 340px;
+      max-height: 240px;
       @include media-breakpoint-up(lg) {
         right: 40px;
       }
@@ -155,7 +155,7 @@ section,
       margin-left: auto;
       clip-path: polygon(41% 0%, 100% 0, 100% 54%, 60% 100%, 0 100%, 0 53%);
       max-width: 642px;
-      max-height: 340px;
+      max-height: 240px;
       @media (min-width: 1200px) and (min-height: 550px) {
         //0.7
         max-height: calc(536px * 0.6);

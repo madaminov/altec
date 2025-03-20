@@ -13,7 +13,10 @@
   background: $gray-5;
   padding-top: 16px;
   .container-sliders {
-    height: calc(100% - 17px - 15px);
+    height: 100%;
+    @include media-breakpoint-up(md) {
+      height: calc(100% - 17px - 15px);
+    }
     .container-fluid {
       height: 100%;
     }

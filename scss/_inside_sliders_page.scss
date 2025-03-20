@@ -6,7 +6,20 @@
     }
   }
   .img-rectangle {
-    max-height: 340px;
+    display: block;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 180px;
+    margin: 0 auto;
+    @include media-breakpoint-up(sm) {
+      width: 80%;
+      max-height: 300px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      max-height: 340px;
+    }
     @media (min-width: 1200px) and (min-height: 550px) {
       //0.7
       max-height: calc(536px * 0.6);
@@ -79,7 +92,7 @@
     height: 100%;
     .swiper-slide {
       height: 100%;
-      height: 390px;
+      height: 360px;
       @include media-breakpoint-up(md) {
         height: 390px;
       }
@@ -118,7 +131,6 @@
     }
     .row-1 {
       margin-bottom: 20px;
-      margin-top: auto;
       .wrap-text {
         display: flex;
         flex-direction: column;
@@ -135,7 +147,7 @@
     .h4,
     .p1,
     ul li {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       @include media-breakpoint-up(md) {
         margin-bottom: 20px;
       }
@@ -147,7 +159,7 @@
       }
       @media (min-width: 1200px) and (min-height: 660px) {
         //0.7
-        margin-bottom: 18px;
+        margin-bottom: 16px;
       }
       @media (min-width: 1200px) and (min-height: 760px) {
         //0.8
@@ -162,13 +174,14 @@
       }
     }
   }
-  .page-inner-3 {
-    h3 {
+  .page-inner-4 {
+    h3,
+    .h3 {
       color: $black-color;
       font-family: $font-stack-inter;
       font-size: 20px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 130%; /* 31.2px */
 
       @include media-breakpoint-up(md) {
@@ -226,6 +239,263 @@
       }
       @media (min-width: 1200px) and (min-height: 960px) {
         margin-bottom: 16px;
+      }
+    }
+    .row-img {
+      gap: 12px 0px;
+      margin-bottom: 0px;
+      @include media-breakpoint-up(md) {
+        gap: 20px 0px;
+        margin-bottom: 14px;
+      }
+      @include media-breakpoint-up(lg) {
+        gap: 24px 0px;
+        margin-bottom: 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        gap: 24px 0px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1200px) and (min-height: 550px) {
+        //0.6
+        margin-bottom: calc(54px * 0.2);
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        margin-bottom: calc(54px * 0.3);
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        margin-bottom: calc(54px * 0.8);
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        margin-bottom: calc(54px * 0.9);
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        margin-bottom: 54px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @media (min-width: 1200px) and (min-height: 550px) {
+          //0.7
+          max-height: 180px;
+        }
+        @media (min-width: 1200px) and (min-height: 660px) {
+          //0.7
+          max-height: 200px;
+        }
+        @media (min-width: 1200px) and (min-height: 760px) {
+          //0.8
+          max-height: 200px;
+        }
+        @media (min-width: 1200px) and (min-height: 860px) {
+          //0.9
+          max-height: 100%;
+        }
+        @media (min-width: 1200px) and (min-height: 960px) {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  .page-inner-5 {
+    .row-counter {
+      gap: 12px 0px;
+      @include media-breakpoint-up(md) {
+        gap: 30px 0px;
+      }
+      @include media-breakpoint-up(lg) {
+        gap: 40px 0px;
+      }
+      @media (min-width: 1200px) and (min-height: 550px) {
+        //0.7
+        gap: calc(40px * 0.6) 0px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        gap: calc(40px * 0.7) 0px;
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        gap: calc(40px * 0.8) 0px;
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        gap: calc(40px * 0.9) 0px;
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        gap: 40px 0px;
+      }
+      .item {
+        display: flex;
+        width: 100%;
+        padding: 20px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        flex-shrink: 0;
+        background-color: $white;
+        height: 100%;
+        @include media-breakpoint-up(md) {
+          gap: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+          gap: 20px;
+        }
+        @include media-breakpoint-up(xl) {
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .page-inner-7 {
+    .contentSlider {
+      margin-bottom: 24px;
+    }
+    .contentSlider-button-next,
+    .contentSlider-button-prev {
+      position: static;
+      margin: 0;
+    }
+    .text {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 12px;
+      @include media-breakpoint-up(md) {
+        margin-top: 0px;
+        gap: 32px;
+      }
+    }
+    .swiper-bottom {
+      text-align: left;
+      display: flex;
+      gap: 32px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .contentSlider-pagination {
+        position: static;
+        width: auto;
+        color: $black-color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .page-inner-8 {
+    .reviewstSlider {
+      margin-bottom: 54px;
+      .wrap-img {
+        margin-bottom: 24px;
+        height: calc(100% - 24px - 12px - 40px);
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .title_name {
+        color: $black-color;
+        font-family: $font-stack-inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 12px;
+        @include media-breakpoint-up(md) {
+          font-size: 16px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 18px;
+        }
+        @media (min-width: 1200px) and (min-height: 660px) {
+          //0.7
+          font-size: 16px;
+        }
+        @media (min-width: 1200px) and (min-height: 760px) {
+          //0.8
+          font-size: 18px;
+        }
+        @media (min-width: 1200px) and (min-height: 860px) {
+          //0.9
+          font-size: 18px;
+        }
+        @media (min-width: 1200px) and (min-height: 960px) {
+          font-size: 20px;
+        }
+      }
+      .date {
+        color: $black-color;
+        font-family: $font-stack-inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 14px;
+        }
+        @media (min-width: 1200px) and (min-height: 660px) {
+          //0.7
+          font-size: 14px;
+        }
+        @media (min-width: 1200px) and (min-height: 760px) {
+          //0.8
+          font-size: 14px;
+        }
+        @media (min-width: 1200px) and (min-height: 860px) {
+          //0.9
+          font-size: 14px;
+        }
+        @media (min-width: 1200px) and (min-height: 960px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .reviewstSlider-button-next,
+    .reviewstSlider-button-prev {
+      position: static;
+      margin: 0;
+    }
+    .swiper-bottom {
+      text-align: left;
+      display: flex;
+      gap: 32px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .reviewstSlider-pagination {
+        position: static;
+        width: auto;
+        color: $black-color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 16px;
+        }
       }
     }
   }

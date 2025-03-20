@@ -215,7 +215,8 @@
 .swiper-slide-next {
   .title,
   .h2,
-  .h3 {
+  .h3,
+  .h4 {
     transition: transform 0.9s ease;
     transform: translate3d(200%, 0, 0);
   }
@@ -227,7 +228,8 @@
     transform: translate3d(200%, 0, 0);
   }
   .main-slider,
-  .img-animation {
+  .img-animation,
+  .img-rectangle {
     transition: transform 0.7s ease;
     transform: translate3d(100%, 0, 0);
   }
@@ -243,11 +245,17 @@
     transition: transform 0.9s ease-out;
     transform: translate3d(200%, 0, 0);
   }
+  .btn-rectangle,
+  .swiper-bottom {
+    transition: transform 0.8s ease-out;
+    transform: translate3d(200%, 0, 0);
+  }
 }
 .swiper-slide-prev {
   .title,
   .h2,
-  .h3 {
+  .h3,
+  .h4 {
     transition: transform 0.8s ease;
     transform: translate3d(-200%, 0, 0);
   }
@@ -259,7 +267,8 @@
     transform: translate3d(-200%, 0, 0);
   }
   .main-slider,
-  img {
+  img,
+  .img-rectangle {
     transition: transform 0.9s ease;
     transform: translate3d(-80%, 0, 0);
   }
@@ -273,6 +282,11 @@
   }
   .form-section-two {
     transition: transform 0.5s ease-in-out;
+    transform: translate3d(-50%, 0, 0);
+  }
+  .btn-rectangle,
+  .swiper-bottom {
+    transition: transform 0.8s ease-in-out;
     transform: translate3d(-50%, 0, 0);
   }
 }
