@@ -216,7 +216,8 @@
   .title,
   .h2,
   .h3,
-  .h4 {
+  .h4,
+  .h2-middle {
     transition: transform 0.9s ease;
     transform: translate3d(200%, 0, 0);
   }
@@ -255,7 +256,8 @@
   .title,
   .h2,
   .h3,
-  .h4 {
+  .h4,
+  .h2-middle {
     transition: transform 0.8s ease;
     transform: translate3d(-200%, 0, 0);
   }

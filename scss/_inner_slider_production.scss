@@ -1,0 +1,96 @@
+.inner-page-for-slider-production {
+  .page-inner-2 .row-1 .wrap-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: end;
+    margin-top: 10px;
+    .h2-middle {
+      margin-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 12px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 30px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        margin-bottom: 25px;
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        margin-bottom: 25px;
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        margin-bottom: 30px;
+      }
+    }
+    .p1 {
+      margin-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 12px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 30px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        margin-bottom: 25px;
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        margin-bottom: 25px;
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .page-inner-3 {
+    h3 {
+      margin-bottom: 0px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 10px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 40px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        margin-bottom: 10px;
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        margin-bottom: 10px;
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        margin-bottom: 10px;
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .insedeSwiper {
+    height: 100%;
+    .swiper-slide {
+      height: 100%;
+      height: 200px;
+    }
+  }
+}

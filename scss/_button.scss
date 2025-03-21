@@ -47,7 +47,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
   height: 36px;
   flex-shrink: 0;
   border: none;
@@ -58,6 +61,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  text-decoration: none;
   @include media-breakpoint-up(md) {
     font-size: 12px;
     width: 200px;

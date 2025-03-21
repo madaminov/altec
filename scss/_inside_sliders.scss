@@ -24,7 +24,7 @@
 
   .page {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     padding-top: 0px;
     @include media-breakpoint-up(md) {
       padding-bottom: 20px;
@@ -57,3 +57,4 @@
 }
 @import '_inside_sliders_text';
 @import '_inside_sliders_page';
+@import '_inner_slider_production';
