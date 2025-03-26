@@ -40,6 +40,23 @@
     background-image: url(../images/telegram-black.svg);
   }
 }
+.btn-link {
+  color: $blue;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  text-decoration: none;
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+}
 .btn-rectangle {
   color: $black-color;
   text-align: center;

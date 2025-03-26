@@ -1,0 +1,66 @@
+.section-contacts {
+  .row-contacts {
+    gap: 20px 0px;
+    .office {
+      color: $gray;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 18.2px */
+      margin-bottom: 10px;
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+    }
+    .wrap-phone {
+      display: flex;
+      gap: 10px 16px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      .phone {
+        color: $black-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        @include media-breakpoint-up(md) {
+          font-size: 16px;
+        }
+      }
+    }
+    .address {
+      color: $black-color;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 23.4px */
+      margin-bottom: 16px;
+      max-width: 280px;
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+    }
+    .email {
+      color: $blue;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .map {
+    margin-top: 46px;
+    min-height: 372px;
+    iframe {
+      min-height: 372px;
+    }
+  }
+}
