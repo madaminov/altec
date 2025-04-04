@@ -1,7 +1,23 @@
+let setImg = () => {
+  document.querySelectorAll('.img-data-src').forEach((box) => {
+    src = box.getAttribute('data-src');
+    box.setAttribute('src', src);
+  });
+};
+
+let setBg = () => {
+  document.querySelectorAll('.set-bg').forEach((box) => {
+    bg = box.getAttribute('data-setbg');
+    box.style.backgroundImage = "url('" + bg + "')";
+  });
+};
+
+setImg();
+setBg();
+
 let window_width = window.outerWidth;
 window.addEventListener('resize', function () {
   window_width = window.outerWidth;
-  console.log(window_width);
 });
 let mobile_menu = document.querySelector('.mobile_menu');
 document
