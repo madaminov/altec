@@ -15010,6 +15010,10 @@ body {
   width: 0;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   max-width: 1920px;
   padding-left: 15px;
@@ -16813,7 +16817,7 @@ section,
 }
 .btn-scroll-prev:hover svg,
 .btn-scroll-next:hover svg {
-  stroke: #fff;
+  stroke: #222222;
 }
 .btn-scroll-prev:disabled, .btn-scroll-prev:disabled:hover,
 .btn-scroll-next:disabled,
@@ -18285,25 +18289,25 @@ footer .link li a {
 }
 @media (min-width: 1200px) and (min-height: 660px) {
   .page-5 .map {
-    height: 299.2px;
+    height: 320px;
     margin-bottom: 28px;
   }
 }
 @media (min-width: 1200px) and (min-height: 760px) {
   .page-5 .map {
-    height: 299.2px;
+    height: 320px;
     margin-bottom: 32px;
   }
 }
 @media (min-width: 1200px) and (min-height: 860px) {
   .page-5 .map {
-    height: 336.6px;
+    height: 400px;
     margin-bottom: 36px;
   }
 }
 @media (min-width: 1200px) and (min-height: 960px) {
   .page-5 .map {
-    height: 374px;
+    height: 400px;
     margin-bottom: 40px;
   }
 }
@@ -19935,6 +19939,13 @@ footer .link li a {
     font-size: 24px;
   }
 }
+.row-news .item .item_name a {
+  color: #222222;
+  text-decoration: none;
+}
+.row-news .item .item_name a:hover {
+  text-decoration: underline;
+}
 .row-news .item .description {
   color: #222222;
   font-size: 16px;
@@ -19969,6 +19980,7 @@ footer .link li a {
 @media (min-width: 1200px) and (min-height: 860px) {
   .row-news .item .description {
     font-size: 14.4px;
+    display: block;
   }
 }
 @media (min-width: 1200px) and (min-height: 960px) {
@@ -19997,6 +20009,9 @@ footer .link li a {
   .row-news .item .date {
     font-size: 14px;
   }
+}
+.row-news .item:hover a {
+  text-decoration: underline;
 }
 
 .inner-page .section-inner.section-news-page h1, .inner-page .section-inner.section-news-page .h1 {

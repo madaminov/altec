@@ -559,6 +559,13 @@
       @media (min-width: 1200px) and (min-height: 960px) {
         font-size: 24px;
       }
+      a {
+        color: $black-color;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     .description {
       color: $black-color;
@@ -587,6 +594,7 @@
       @media (min-width: 1200px) and (min-height: 860px) {
         //0.9
         font-size: calc(16px * 0.9);
+        display: block;
       }
       @media (min-width: 1200px) and (min-height: 960px) {
         font-size: 16px;
@@ -606,6 +614,11 @@
       }
       @include media-breakpoint-up(xl) {
         font-size: 14px;
+      }
+    }
+    &:hover {
+      a {
+        text-decoration: underline;
       }
     }
   }
