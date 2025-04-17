@@ -15,6 +15,16 @@ let setBg = () => {
 setImg();
 setBg();
 
+let getOrederModal = document.getElementById('getOrederModal');
+getOrederModal.addEventListener('show.bs.modal', function (event) {
+  let button = event.relatedTarget;
+  product = button.getAttribute('data-product');
+  let modalBodyInput = getOrederModal.querySelector(
+    '.modal-body input[name="product"]'
+  );
+  modalBodyInput.setAttribute('value', modalBodyInput);
+});
+
 let window_width = window.outerWidth;
 window.addEventListener('resize', function () {
   window_width = window.outerWidth;

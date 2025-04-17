@@ -81,6 +81,7 @@
       line-height: normal;
       margin-bottom: 0px;
       min-height: 30px;
+      width: 100%;
       a {
         transition: all 0.3s ease;
         color: $black-color;
@@ -91,9 +92,11 @@
       }
       @include media-breakpoint-up(lg) {
         @include fs-lg(24px);
+        width: 75%;
       }
       @include media-breakpoint-up(xl) {
         font-size: 24px;
+        width: 65%;
       }
       @media (min-width: 1200px) and (min-height: 660px) {
         //0.7

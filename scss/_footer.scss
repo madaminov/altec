@@ -136,6 +136,10 @@ footer {
         font-weight: 500;
         line-height: normal;
         text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $blue;
+        }
         @include media-breakpoint-up(sm) {
           font-size: 12px;
         }

@@ -205,6 +205,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        a {
+          color: $black-color;
+          text-decoration: none;
+        }
       }
       .date {
         color: $gray-4;
@@ -212,6 +216,13 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+      }
+      &:hover {
+        .name {
+          a {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
