@@ -1,0 +1,46 @@
+.headerSearch {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-color: $body-color;
+  padding: 15px 0;
+  z-index: -99;
+  -webkit-transform: translate3d(110%, 0, 0);
+  transform: translate3d(110%, 0, 0);
+  transition: all 0.5s ease;  
+  @include media-breakpoint-up(xl) {
+    width: 50%;
+  }
+  &.open {
+    z-index: 10;    
+    -webkit-transform: translate3d(0%, 0, 0) scale(1);
+    transform: translate3d(0%, 0, 0) scale(1);
+    transition: all 0.5s ease;
+  }
+  .wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    align-items: flex-start;
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+      width: calc(70% - 32px);
+    }
+  }
+  .header-search__form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    align-items: center;
+    width: calc(100% - 32px);
+    .header-search-input {
+      border: none;
+      background-color: $body-color;
+      border-bottom: 2px solid $black-color;
+      padding: 0px 0px 4px 4px;
+      outline: none !important;
+      max-width: calc(100% - 32px);
+      width: 100%;
+    }
+  }
+}

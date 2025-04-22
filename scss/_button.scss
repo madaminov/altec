@@ -237,3 +237,25 @@
   height: 18px;
   border: none;
 }
+.btn-close {
+  border: none;
+  background: transparent;
+  width: 13.5px;
+  height: 13.5px;
+  transition: all 0.3s ease;
+  svg {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 13.5px;
+    height: 13.5px;
+    stroke: $gray-7;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    svg {
+      stroke: $black-color;
+      transition: all 0.3s ease;
+    }
+  }
+}

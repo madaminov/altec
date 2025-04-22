@@ -14,16 +14,17 @@ let setBg = () => {
 
 setImg();
 setBg();
-
-let getOrederModal = document.getElementById('getOrederModal');
-getOrederModal.addEventListener('show.bs.modal', function (event) {
-  let button = event.relatedTarget;
-  product = button.getAttribute('data-product');
-  let modalBodyInput = getOrederModal.querySelector(
-    '.modal-body input[name="product"]'
-  );
-  modalBodyInput.setAttribute('value', modalBodyInput);
-});
+if (document.getElementById('getOrederModal')) {
+  let getOrederModal = document.getElementById('getOrederModal');
+  getOrederModal.addEventListener('show.bs.modal', function (event) {
+    let button = event.relatedTarget;
+    product = button.getAttribute('data-product');
+    let modalBodyInput = getOrederModal.querySelector(
+      '.modal-body input[name="product"]'
+    );
+    modalBodyInput.setAttribute('value', modalBodyInput);
+  });
+}
 
 let window_width = window.outerWidth;
 window.addEventListener('resize', function () {
@@ -57,6 +58,21 @@ formControl.forEach((box) => {
     }
   });
 });
+let headerSearch = document.querySelector('.headerSearch');
+document
+  .querySelector('.btn-search-open-close')
+  .addEventListener('click', function (event) {
+    if (headerSearch.classList.contains('open')) {
+      headerSearch.classList.remove('open');
+    } else {
+      headerSearch.classList.add('open');
+    }
+  });
+document
+  .querySelector('.btn-search-close')
+  .addEventListener('click', function (event) {
+    headerSearch.classList.remove('open');
+  });
 
 $(function () {
   if (window_width > 768) {
