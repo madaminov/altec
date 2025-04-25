@@ -64,7 +64,7 @@ textarea {
     transition: all 0.3s ease;
     transform: translate3d(0px, 24px, 0px);
     @include media-breakpoint-up(md) {
-      @include fs-md(16px);
+      font-size: 12px;
     }
     @include media-breakpoint-up(lg) {
       @include fs-lg(16px);
@@ -104,7 +104,48 @@ textarea {
     }
   }
 }
-
+.form-group.form-group-textarea {
+  margin-top: 20px;
+  label {
+    color: $black-color;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+    }
+    @include media-breakpoint-up(lg) {
+      @include fs-lg(16px);
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+    }
+    @include media-breakpoint-up(xxl) {
+      font-size: 16px;
+    }
+  }
+  .form-control {
+    color: $black-color;
+    min-height: 70px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $black-color;
+    border-top: 2px solid $black-color;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    &::placeholder {
+      color: transparent !important;
+    }
+  }
+}
 .form-check-label {
   color: $black-color;
   font-size: 10px;

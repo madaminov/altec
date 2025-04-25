@@ -1,3 +1,26 @@
+.btn-primary {
+  color: $black-color;
+  font-family: $font-stack-inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+  text-decoration: none;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $black-color;
+  background-color: transparent;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $white;
+    background-color: $blue;
+    border: 1px solid $blue;
+  }
+}
 .btn-search {
   padding: 0;
   border: 0;

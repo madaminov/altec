@@ -71,6 +71,7 @@
   }
   header + .section-inner {
     padding-top: 16px;
+    min-height: calc(100dvh - 60px - 145px);
     @include media-breakpoint-up(md) {
       padding-top: 16px;
     }

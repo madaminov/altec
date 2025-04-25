@@ -111,7 +111,8 @@ body {
         }
       }
       &.active {
-        a {
+        a,
+        span {
           color: $blue;
         }
       }

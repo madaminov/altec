@@ -11,6 +11,20 @@
       height: auto;
     }
   }
+  .headerSearch {
+    left: 0;
+    -webkit-transform: translate3d(-110%, 0, 0);
+    transform: translate3d(-110%, 0, 0);
+    @include media-breakpoint-up(xl) {
+      width: 40%;
+    }
+    &.open {
+      z-index: 10;
+      -webkit-transform: translate3d(0%, 0, 0) scale(1);
+      transform: translate3d(0%, 0, 0) scale(1);
+      transition: all 0.5s ease;
+    }
+  }
 }
 .inner-page .section-404 {
   flex-grow: 1;

@@ -7,12 +7,12 @@
   z-index: -99;
   -webkit-transform: translate3d(110%, 0, 0);
   transform: translate3d(110%, 0, 0);
-  transition: all 0.5s ease;  
+  transition: all 0.5s ease;
   @include media-breakpoint-up(xl) {
     width: 50%;
   }
   &.open {
-    z-index: 10;    
+    z-index: 10;
     -webkit-transform: translate3d(0%, 0, 0) scale(1);
     transform: translate3d(0%, 0, 0) scale(1);
     transition: all 0.5s ease;
@@ -41,6 +41,165 @@
       outline: none !important;
       max-width: calc(100% - 32px);
       width: 100%;
+    }
+  }
+}
+.section-search-page {
+  padding-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 60px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 80px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 100px;
+  }
+}
+.row-sisea-results-list {
+  gap: 48px 0px;
+  margin-bottom: 50px;
+  .item {
+    .wrap-title {
+      margin-bottom: 12px;
+    }
+    h3 {
+      color: $black-color;
+      font-family: $font-stack-inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 0px;
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
+      a {
+        color: $black-color;
+        text-decoration: none;
+      }
+    }
+    .text {
+      color: $black-color;
+      font-family: $font-stack-inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 20.8px */
+      margin-bottom: 20px;
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+    }
+    .type-page {
+      color: $gray;
+      font-family: $font-stack-inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: inline-flex;
+      padding: 6px 14px 7px 14px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 19px;
+      background: $gray-2;
+      margin-bottom: 16px;
+    }
+  }
+  .item-product {
+    .wrap-title {
+      margin-bottom: 16px;
+    }
+    .wrap-img {
+      margin-bottom: 12px;
+      background-color: transparent;
+      clip-path: polygon(39% 0, 100% 0, 100% 50%, 55% 100%, 0 100%, 0 43%);
+      width: 100%;
+      min-height: 120px;
+      height: auto;
+      position: relative;
+      transition: all 0.3s ease;
+      img {
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: scale(1.1);
+        clip-path: polygon(39% 0, 100% 0, 100% 50%, 55% 100%, 0 100%, 0 43%);
+        transition: all 0.3s ease;
+      }
+      @include media-breakpoint-up(sm) {
+        min-height: 150px;
+        margin-bottom: 15px;
+        img {
+          height: calc(140px - 10px);
+        }
+      }
+      @include media-breakpoint-up(md) {
+        margin-bottom: 20px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 24px;
+      }
+      @media (min-width: 1200px) and (min-height: 660px) {
+        //0.7
+        height: calc(290px * 0.7);
+        margin-bottom: calc(24px * 0.7);
+        img {
+          height: calc(290px * 0.7 - 10px);
+        }
+      }
+      @media (min-width: 1200px) and (min-height: 760px) {
+        //0.8
+        height: calc(290px * 0.8);
+        margin-bottom: calc(24px * 0.8);
+        img {
+          height: calc(290px * 0.8 - 10px);
+        }
+      }
+      @media (min-width: 1200px) and (min-height: 860px) {
+        //0.9
+        height: calc(290px * 0.9);
+        margin-bottom: calc(24px * 0.9);
+        img {
+          height: calc(290px * 0.9 - 10px);
+        }
+      }
+      @media (min-width: 1200px) and (min-height: 960px) {
+        height: 298px;
+        margin-bottom: 24px;
+        img {
+          height: calc(298px - 10px);
+        }
+      }
+    }
+    &:hover {
+      .wrap-img {
+        background-color: $red;
+
+        img {
+          transform: scale(1);
+        }
+      }
     }
   }
 }
