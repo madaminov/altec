@@ -79,6 +79,15 @@ header {
         font-weight: 500;
         line-height: normal;
         text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $blue;
+        }
+      }
+      &.active {
+        a {
+          color: $blue;
+        }
       }
     }
   }
@@ -90,8 +99,12 @@ header {
     line-height: normal;
     text-decoration: none;
     margin-left: 45px;
+    transition: all 0.3s ease;
     @include media-breakpoint-up(xl) {
       margin-top: 15px;
+    }
+    &:hover {
+      color: $blue;
     }
   }
   .phone {
@@ -102,8 +115,12 @@ header {
     line-height: normal;
     text-decoration: none;
     margin-left: 24px;
+    transition: all 0.3s ease;
     @include media-breakpoint-up(xl) {
       margin-top: 15px;
+    }
+    &:hover {
+      color: $blue;
     }
   }
   .btn-menu-mobile {

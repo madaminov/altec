@@ -44,7 +44,7 @@
   .wrap-read-more {
     border-top: 2px solid $gray-6;
     border-bottom: 2px solid $gray-6;
-    padding: 34px 60px;
+    padding: 18px 22px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -52,19 +52,28 @@
     margin-bottom: 40px;
     @include media-breakpoint-up(md) {
       margin-bottom: 40px;
+      padding: 20px 30px;
     }
     @include media-breakpoint-up(lg) {
       margin-bottom: 60px;
+      padding: 24px 40px;
     }
     @include media-breakpoint-up(xl) {
       margin-bottom: 60px;
+      padding: 34px 60px;
     }
     .title {
       color: $black-color;
-      font-size: 23px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 600;
       line-height: 130%; /* 29.9px */
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 23px;
+      }
     }
     .item {
       display: flex;
@@ -73,10 +82,16 @@
       gap: 12px;
       .name {
         color: $black-color;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 20px;
+        }
         a {
           color: $black-color;
           text-decoration: none;
@@ -117,11 +132,17 @@
     .title {
       color: $black-color;
       font-family: $font-stack-inter;
-      font-size: 20px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
       margin-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+      }
       a {
         color: $black-color;
         text-decoration: none;
@@ -133,15 +154,21 @@
     .date {
       color: $gray-4;
       font-family: $font-stack-inter;
-      font-size: 14px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @include media-breakpoint-up(md) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 14px;
+      }
     }
     .count-comments {
       color: $gray-4;
       font-family: $font-stack-inter;
-      font-size: 14px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -149,6 +176,12 @@
       background-image: url(../images/icon-commit.svg);
       background-repeat: no-repeat;
       background-position: center left;
+      @include media-breakpoint-up(md) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 14px;
+      }
     }
   }
 }

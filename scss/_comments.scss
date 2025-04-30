@@ -71,14 +71,19 @@
         line-height: normal;
       }
       .comment {
-        color: $black-color;
-        font-family: Inter;
-        font-size: 16px;
+        color: $black-color;        
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 130%; /* 20.8px */
         margin-top: 10px;
         margin-bottom: 12px;
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 16px;
+        }
       }
       .answer {
         color: $blue;

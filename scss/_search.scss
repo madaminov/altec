@@ -8,7 +8,11 @@
   -webkit-transform: translate3d(110%, 0, 0);
   transform: translate3d(110%, 0, 0);
   transition: all 0.5s ease;
+  @include media-breakpoint-up(lg) {
+    padding: 15px 15px;    
+  }
   @include media-breakpoint-up(xl) {
+    padding: 15px 15px;
     width: 50%;
   }
   &.open {

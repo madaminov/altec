@@ -83,4 +83,15 @@ $(function () {
   )
     .attr('data-fancybox', 'gallery')
     .addClass('fancybox');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      $('#scrollUp').fadeIn();
+    } else {
+      $('#scrollUp').fadeOut();
+    }
+  });
+  $('#scrollUp').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 400);
+    return false;
+  });
 });
