@@ -18366,30 +18366,13 @@ footer .link li a:hover {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1200px) {
-  .page-2 .row-1 {
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 1400px) {
-  .page-2 .row-1 {
-    margin-bottom: 63px;
-  }
-}
-@media (min-width: 1200px) and (min-height: 550px) {
-  .page-2 .row-1 {
-    margin-bottom: 37.8px;
-  }
-}
 @media (min-width: 1200px) and (min-height: 660px) {
   .page-2 .row-1 {
-    margin-bottom: 44.1px;
     height: 75%;
   }
 }
 @media (min-width: 1200px) and (min-height: 760px) {
   .page-2 .row-1 {
-    margin-bottom: 50.4px;
     height: 80%;
   }
 }
@@ -18401,7 +18384,6 @@ footer .link li a:hover {
 }
 @media (min-width: 1200px) and (min-height: 960px) {
   .page-2 .row-1 {
-    margin-bottom: 63px;
     height: 100%;
   }
 }

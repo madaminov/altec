@@ -134,23 +134,23 @@
       margin-bottom: 30px;
     }
     @include media-breakpoint-up(xl) {
-      margin-bottom: 40px;
+      //margin-bottom: 40px;
     }
     @include media-breakpoint-up(xxl) {
-      margin-bottom: 63px;
+      //margin-bottom: 63px;
     }
     @media (min-width: 1200px) and (min-height: 550px) {
       //0.6
-      margin-bottom: calc(63px * 0.6);
+      //margin-bottom: calc(63px * 0.6);
     }
     @media (min-width: 1200px) and (min-height: 660px) {
       //0.7
-      margin-bottom: calc(63px * 0.7);
+     //margin-bottom: calc(63px * 0.7);
       height: 75%;
     }
     @media (min-width: 1200px) and (min-height: 760px) {
       //0.8
-      margin-bottom: calc(63px * 0.8);
+      //margin-bottom: calc(63px * 0.8);
       height: 80%;
     }
     @media (min-width: 1200px) and (min-height: 860px) {
@@ -159,7 +159,7 @@
       height: 80%;
     }
     @media (min-width: 1200px) and (min-height: 960px) {
-      margin-bottom: 63px;
+      //margin-bottom: 63px;
       height: 100%;
     }
   }
