@@ -112,11 +112,12 @@ textarea {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     position: relative;
     z-index: 1;
     transition: all 0.3s ease;
     @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
       font-size: 12px;
     }
     @include media-breakpoint-up(lg) {
@@ -131,7 +132,7 @@ textarea {
   }
   .form-control {
     color: $black-color;
-    min-height: 77px;
+    min-height: 50px;
     height: auto;
     background-color: transparent;
     border: none;
@@ -142,6 +143,9 @@ textarea {
     position: relative;
     z-index: 2;
     transition: all 0.3s ease;
+    @include media-breakpoint-up(md) {
+      min-height: 77px;
+    }
     &::placeholder {
       color: transparent !important;
     }
@@ -188,10 +192,16 @@ textarea {
 }
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext {
-  padding: 1rem 0rem;
+  padding: 0.8rem 0rem;
+  @include media-breakpoint-up(md) {
+    padding: 1rem 0rem;
+  }
 }
 .form-floating > label {
-  padding: 1rem 0rem;
+  padding: 0.8rem 0rem;
+  @include media-breakpoint-up(md) {
+    padding: 1rem 0rem;
+  }
 }
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
@@ -199,6 +209,18 @@ textarea {
 .form-floating > .form-select ~ label {
   color: $gray;
   transform: scale(0.85) translateY(-0.7rem) translateX(0rem);
+}
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext,
+.form-floating > .form-select {
+  height: calc(2.5rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(2.5rem + calc(var(--bs-border-width) * 2));
+  line-height: 1.25;
+  @include media-breakpoint-up(md) {
+    height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+    min-height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+    line-height: 1.25;
+  }
 }
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
